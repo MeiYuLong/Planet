@@ -1,0 +1,16 @@
+PODS:
+  - Planet (0.1.0)
+
+DEPENDENCIES:
+  - Planet (from `../`)
+
+EXTERNAL SOURCES:
+  Planet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Planet: 5c1fe4140d4b4466d0a3d2102c20fbca5f7c18ee
+
+PODFILE CHECKSUM: 795a0d97a28be4f1b14745a0ecb1b0ad46918f73
+
+COCOAPODS: 1.10.0

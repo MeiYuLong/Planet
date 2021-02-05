@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import Planet
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let earth = Planet.Earth
+        print(earth.name, earth.diameter, earth.age)
     }
 
     override func didReceiveMemoryWarning() {
