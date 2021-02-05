@@ -1,9 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 platform :ios, '9.0'
 
 target 'Planet_Example' do
-  pod 'Planet', :path => '../'
+  pod 'MPlanet', :path => '../'
 
   target 'Planet_Tests' do
     inherit! :search_paths

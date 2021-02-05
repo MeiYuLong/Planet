@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Planet
+## MPlanet
 
 Copyright (c) 2021 longjiao914@126.com <longjiao914@126.com>
 

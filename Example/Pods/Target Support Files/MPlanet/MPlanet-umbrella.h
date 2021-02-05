@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double PlanetVersionNumber;
-FOUNDATION_EXPORT const unsigned char PlanetVersionString[];
+FOUNDATION_EXPORT double MPlanetVersionNumber;
+FOUNDATION_EXPORT const unsigned char MPlanetVersionString[];
 

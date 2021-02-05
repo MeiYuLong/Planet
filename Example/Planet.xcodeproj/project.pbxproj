@@ -269,11 +269,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Planet_Example/Pods-Planet_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Planet/Planet.framework",
+				"${BUILT_PRODUCTS_DIR}/MPlanet/MPlanet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Planet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MPlanet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,0 +1,6 @@
+framework module MPlanet {
+  umbrella header "MPlanet-umbrella.h"
+
+  export *
+  module * { export * }
+}

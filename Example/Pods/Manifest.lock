@@ -1,16 +1,16 @@
 PODS:
-  - Planet (0.1.0)
+  - MPlanet (0.0.1)
 
 DEPENDENCIES:
-  - Planet (from `../`)
+  - MPlanet (from `../`)
 
 EXTERNAL SOURCES:
-  Planet:
+  MPlanet:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Planet: 5c1fe4140d4b4466d0a3d2102c20fbca5f7c18ee
+  MPlanet: d347369f5a89975904050fea953c0ac83ca2ef25
 
-PODFILE CHECKSUM: 795a0d97a28be4f1b14745a0ecb1b0ad46918f73
+PODFILE CHECKSUM: 7b36e4bd64b8ce20ee410248eb5141ba103860b4
 
 COCOAPODS: 1.10.0
