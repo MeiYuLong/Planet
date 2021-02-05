@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'Planet_Example' do
+  pod 'Planet', :path => '../'
+
+  target 'Planet_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
