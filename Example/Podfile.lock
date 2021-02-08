@@ -1,15 +1,37 @@
 PODS:
-  - MPlanet (0.0.1)
+  - Alamofire (4.9.1)
+  - HandyJSON (5.0.2)
+  - Moya (13.0.1):
+    - Moya/Core (= 13.0.1)
+  - Moya/Core (13.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.1)
+  - MPlanet (0.0.2):
+    - Alamofire (~> 4.0)
+    - HandyJSON (~> 5.0.2)
+    - Moya (~> 13.0)
+  - Result (4.1.0)
 
 DEPENDENCIES:
   - MPlanet (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - HandyJSON
+    - Moya
+    - Result
 
 EXTERNAL SOURCES:
   MPlanet:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MPlanet: d347369f5a89975904050fea953c0ac83ca2ef25
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
+  MPlanet: 4b18db742fe06cd67fe7eaa5461040630392ce3d
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
 
 PODFILE CHECKSUM: 7b36e4bd64b8ce20ee410248eb5141ba103860b4
 

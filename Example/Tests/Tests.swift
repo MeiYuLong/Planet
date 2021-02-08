@@ -1,5 +1,5 @@
 import XCTest
-import Planet
+import MPlanet
 
 class Tests: XCTestCase {
     

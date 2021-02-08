@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Planet
+import MPlanet
 
 class ViewController: UIViewController {
 
@@ -17,6 +17,18 @@ class ViewController: UIViewController {
         
         let earth = Planet.Earth
         print(earth.name, earth.diameter, earth.age)
+        
+        MProvider.request(protocol: MBaseClass<MBaseModel>(), target: .login) { (result) in
+            switch result {
+            case let .success(response):
+                guard let data = response.data else {
+                    return
+                }
+                print(data.baseMessage ?? "")
+            case let .failure(response):
+                print(response.message)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

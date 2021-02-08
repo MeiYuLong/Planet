@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23A229507709517987BD7589 /* Pods_Planet_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978036991DF4A937CD40556 /* Pods_Planet_Tests.framework */; };
+		46B0641B25CFD97000D5D38D /* MPlanetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B0641A25CFD97000D5D38D /* MPlanetAPI.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,10 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1AE96C5E2AF2C48B770BCAFC /* Planet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Planet.podspec; path = ../Planet.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		348275FAEC5A9BC88FBA1E71 /* Pods-Planet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planet_Tests.release.xcconfig"; path = "Target Support Files/Pods-Planet_Tests/Pods-Planet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		38377AF4F63A70496A8D5F21 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3978036991DF4A937CD40556 /* Pods_Planet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B0641A25CFD97000D5D38D /* MPlanetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPlanetAPI.swift; sourceTree = "<group>"; };
 		55E0364F58E38C5FC9C57EAA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5D3B87471940472D44FA2404 /* Pods-Planet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planet_Example.debug.xcconfig"; path = "Target Support Files/Pods-Planet_Example/Pods-Planet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Planet_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planet_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +100,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				46B0641A25CFD97000D5D38D /* MPlanetAPI.swift */,
 			);
 			name = "Example for Planet";
 			path = Planet;
@@ -132,7 +134,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				1AE96C5E2AF2C48B770BCAFC /* Planet.podspec */,
 				38377AF4F63A70496A8D5F21 /* README.md */,
 				55E0364F58E38C5FC9C57EAA /* LICENSE */,
 			);
@@ -269,11 +270,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Planet_Example/Pods-Planet_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/MPlanet/MPlanet.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MPlanet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,6 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				46B0641B25CFD97000D5D38D /* MPlanetAPI.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
