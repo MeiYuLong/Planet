@@ -9,6 +9,12 @@
 import UIKit
 import MPlanet
 
+class LoginModel: MBaseModel{
+    public var code: Int?
+
+    public var message: String?
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -18,9 +24,10 @@ class ViewController: UIViewController {
         let earth = Planet.Earth
         print(earth.name, earth.diameter, earth.age)
         
-        MProvider.request(protocol: MBaseClass<MBaseModel>(), target: .login) { (result) in
+        MProvider.request(protocol: MBaseClass<LoginModel>(), target: .login) { (result) in
             switch result {
             case let .success(response):
+                print("response.code:",response.code, "response.message:", response.message)
                 guard let data = response.data else {
                     return
                 }
